@@ -1,0 +1,38 @@
+git checkoutQuestions for next 1-1 sesson:
+
+How to run sublime from the terminal - subl and subime don't work
+
+using diff to find bugs (or more specifically typos) is great if the files haven't changed too much between versions. I also suspect it is great for simple non-algorithm languages such as html and css but less useful for others.
+
+you can see when and how changes were made. Possibly look out for repeated similar types of error
+
+Pros of maunally choosing commits: can do at a logical point. encourages pause for reflection
+Cons: tempting to  leave too long so as not to disturb the workflow
+
+It's critical that files that interact together (html/css/java) are saved at the same time as they interact real time (unlike google docs
+
+useful commands:
+
+git clone "url to repository"
+cd to the repository directory (off the home dir)
+git log (logs changes in commits)
+git config --global color.ui auto
+git diff old-commit-# new-commit-#
+
+q (really useful as it quits from the terminal)
+
+in finder cmd-shift-H will get you to your home directory
+
+when using GIT checkout: (to acces a version that is not the most recent)
+save the id of the most recent commit
+use
+git checkout id-of-comit-you-want-to-check
+
+verion control is useful for taking risks with coding:
+
+the idea of exploration - get away from incrementally better without worrying about getting back to what you want
+
+Will use git for web page file - .....
+
+git status (show the status.... duh!)
+
