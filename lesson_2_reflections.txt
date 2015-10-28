@@ -1,0 +1,5 @@
+Git uses a 'staging area' to hold files before committing, use
+git add <file> to add files to the staging area
+git rm --cached <file> to remove them
+
+Staging area is different because it assembles files before making a committ. Gives a moment to pause to make sure all and only the files in the logical stage are added
