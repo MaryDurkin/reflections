@@ -1,5 +1,15 @@
-Git uses a 'staging area' to hold files before committing, use
+Git uses a 'staging area' to hold files before committing
+The three conceptual areas are: working directory, staging area and repository
 git add <file> to add files to the staging area
 git rm --cached <file> to remove them
 
 Staging area is different because it assembles files before making a committ. Gives a moment to pause to make sure all and only the files in the logical stage are added
+
+
+git diff    with no arguements compares the files in the staging area with those in the working directory
+git diff --staged 	compares those in the staging area with the most recent commit in the repository.
+git diff comit_id_old commit_id_newer compares different commits
+
+git reset --hard  discards changes in the working directory or the staging area USE WITH CAUTION
+
+
