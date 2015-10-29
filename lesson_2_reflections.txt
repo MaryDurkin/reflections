@@ -37,3 +37,17 @@ git checkout -b new_branch_name (when you have a detached HEAD and want to turn 
 
 git branch new_branch_name
 git checkout new_branch_name
+
+
+Merging Branches:
+
+
+The merged commmit has two parents. In this case it becomes the new tip of the master branch Once they are merged the LABEL of the junior merge partner is discarded. Old version of comits on that branch can still be reach but it is not considered a branch. Commits will be listed by timestamp
+
+
+git show <commit id #> show the difference between the commit and it's parent, without having to know the id of the parent.
+
+Q: how to list all the branches that a repository has?
+git branch
+
+git branch -d branch-name (deletes the LABEL of the branch, but not the commits)
