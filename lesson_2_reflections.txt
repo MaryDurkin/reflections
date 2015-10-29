@@ -24,3 +24,16 @@ git branch branch-name - creates a branch called, you guessed it branch name
 git checkout branch-name - checks  out the branch branch-name
 
 So perhaps use branches when you are just seeing how things might look, need a different version or hav't decided to implement thr changes
+
+If several people are working on the same project make branches to sign out branches (for bug fix, for adding features etc.) When each section is complete merge them back together again
+
+remote branch - a branch created by others. Once you check out a remote branch it behaves just like a branch you created yourself
+
+git log --graph --oneline branch1 branch2 (--online makes output a little easier to read)
+
+Be careful with brances as log reaches parent (grandparent etc) of current commit. Remember branch names do that nodes don't become unreachable
+
+git checkout -b new_branch_name (when you have a detached HEAD and want to turn it into a branch) it is the equivalent of;
+
+git branch new_branch_name
+git checkout new_branch_name
