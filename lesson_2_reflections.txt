@@ -1,6 +1,8 @@
 Git uses a 'staging area' to hold files before committing
 The three conceptual areas are: working directory, staging area and repository
+
 git add <file> to add files to the staging area
+
 git rm --cached <file> to remove them
 
 Staging area is different because it assembles files before making a committ. Gives a moment to pause to make sure all and only the files in the logical stage are added
@@ -13,3 +15,12 @@ git diff comit_id_old commit_id_newer compares different commits
 git reset --hard  discards changes in the working directory or the staging area USE WITH CAUTION
 
 
+git commit  makes a commit of the staging area to the repository
+
+git branch (with no arguments) shows the branch you are on
+
+git branch branch-name - creates a branch called, you guessed it branch name
+
+git checkout branch-name - checks  out the branch branch-name
+
+So perhaps use branches when you are just seeing how things might look, need a different version or hav't decided to implement thr changes
