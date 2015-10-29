@@ -41,6 +41,10 @@ git checkout new_branch_name
 
 Merging Branches:
 
+from the master branch..
+
+git merge master coins (will merge coins into master)
+
 
 The merged commmit has two parents. In this case it becomes the new tip of the master branch Once they are merged the LABEL of the junior merge partner is discarded. Old version of comits on that branch can still be reach but it is not considered a branch. Commits will be listed by timestamp
 
@@ -51,3 +55,20 @@ Q: how to list all the branches that a repository has?
 git branch
 
 git branch -d branch-name (deletes the LABEL of the branch, but not the commits)
+
+Merge conflict: when different branches are not enirely compatable what's a git to do?
+Does not merge the areas but brings the conflict to your attention do you can decide and fix it
+
+when merging - the branch you are in is important:
+
+eg in branch easy-mode
+git merge master easy-mode      will create a new head on easy-node
+
+but in branch master
+git merge  master easy-mode  will create a new head in master
+
+So sometimes autoatic merges are better (if you have been working on separate areas)
+Sometime manual is better - fewer bug introduced?
+
+
+
